@@ -44,7 +44,7 @@ button:hover {
     transform: translateY(-2px);
 }
 
-#context, #posts, #show-post-part {
+#whole-context, #posts, #show-post-part, #authors1, #authors2 {
     background-color: #fff;
     padding: 20px;
     border-radius: 15px;
@@ -104,12 +104,16 @@ a button:hover {
         margin-bottom: 10px;
     }
 
+    a button {
+        width: 50%;
+    }
+
     #context {
         padding: 15px;
     }
 }
 
-#authors {
+#authors1, #authors2 {
     display: flex;
     flex-direction: column;
     align-items: center;
