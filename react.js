@@ -61,7 +61,7 @@ class App1 extends React.Component {
 
     render () {
         return (
-            <div>
+            <div id="whole-context">
               <h1>Change Post Part</h1>
               <div id="links">
                 <button type="button" onClick={this.handleClick} id="5">Jupiter</button>
@@ -222,7 +222,7 @@ const Authors1 = () => {
     const [expertises, expSet] = useState(["UX/UI Designer", "Data Scientist", "Cybersecurity Analyst", "Full Stack Developer"]);
 
     return (
-        <div id="authors">
+        <div id="authors1">
             <h1>Show Post With Functional Component</h1>
             {names.map((name, index) => (
                 <div class="author-card" key={index} id={name.toLowerCase().replace(" ", "-")}>
@@ -247,7 +247,7 @@ class Authors2 extends React.Component {
 
     render () {
         return (
-            <div id="authors">
+            <div id="authors2">
                 <h1>Show Post With Class Component</h1>
                 {this.state.names.map((name, index) => (
                     <div class="author-card" key={index} id={name.toLowerCase().replace(" ", "-")}>
